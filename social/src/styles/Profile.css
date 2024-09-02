@@ -1,0 +1,164 @@
+/* Profile Page Styling */
+.profile {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.profile h1 {
+    font-size: 34px;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.user-details {
+    margin-bottom: 35px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-details p {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin: 8px 0;
+}
+
+.user-posts {
+    margin-top: 30px;
+}
+
+.user-posts h2 {
+    font-size: 26px;
+    color: #34495e;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 10px;
+}
+
+.user_posts {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+}
+
+.post p {
+    font-size: 17px;
+    color: #2c3e50;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.post p:first-of-type {
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+
+.three-dots {
+    cursor: pointer;
+    font-size: 30px;
+    color: #888;
+    margin-left: 750px;
+}
+
+.post_media {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.post-footer span {
+    font-size: 15px;
+    color: #95a5a6;
+}
+
+button {
+    background-color: #e74c3c;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+@media (max-width: 768px) {
+    .profile {
+        padding: 15px;
+    }
+
+    .profile h1 {
+        font-size: 28px;
+    }
+
+    .user-details p,
+    .post p {
+        font-size: 16px;
+    }
+
+    .user-posts h2 {
+        font-size: 22px;
+    }
+
+    button {
+        font-size: 15px;
+        padding: 8px 15px;
+    }
+}
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    margin-right: 250px;
+    right: 0;
+    border-radius: 4px;
+    z-index: 1;
+    width: 10%;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-menu button {
+    display: block;
+    width: 100%;
+    padding: 4px;
+    border: none;
+    background-color: #d32316;
+    cursor: pointer;
+    text-align: center;
+}
+
+.dropdown-menu button:hover {
+    background-color: #6d0c0c;
+}
